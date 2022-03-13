@@ -1,0 +1,30 @@
+body.active {
+  overflow: hidden;
+}
+
+.catalog__modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.catalog__modal-bg.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.catalog__modal-bg-close {
+  position: fixed;
+  top: 32px;
+  cursor: pointer;
+  right: 40px;
+}

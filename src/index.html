@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/star_active.png" type="image/png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/favorit.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/mobile576.css" />
+    <title>Тестовое</title>
+  </head>
+  <body>
+    <div class="custom__container">
+      <nav class="navbar">
+        <button class="catalog__link active" id="catalog">Каталог</button>
+        <button class="favorit__link" id="favorit">Избранное</button>
+      </nav>
+      <section class="catalog__page active">
+        <ul class="catalog__list"></ul>
+      </section>
+      <section class="favorit__page">
+        <div class="favorit__list"></div>
+      </section>
+    </div>
+    <div onclick="closeModal()" class="catalog__modal-bg"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

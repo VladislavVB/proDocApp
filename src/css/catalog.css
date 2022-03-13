@@ -1,0 +1,147 @@
+.catalog__page {
+  margin-top: 20px;
+  display: none;
+  min-height: 80vh;
+  align-items: center;
+  position: relative;
+  /* justify-content: center; */
+}
+
+.catalog__page.active {
+  display: flex;
+}
+
+.catalog__list-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background: #117dc1;
+  position: relative;
+}
+
+.catalog__list-btn::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.catalog__list-btn::after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.catalog__line {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.catalog__line.active button::after {
+  height: 0px;
+}
+
+.catalog__line-album {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 24px;
+}
+
+.catalog__line-name {
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.catalog__list {
+  width: 100%;
+  padding-left: 0;
+}
+.catalog__line-photos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.photo__item {
+  width: 150px;
+  height: 150px;
+  /* background-color: blueviolet; */
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 42px;
+  margin-bottom: 42px;
+}
+.photo__item-star {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+.photo__item-star img:nth-child(1) {
+  display: none;
+}
+.photo__item-star img:nth-child(2) {
+  display: block;
+}
+.photo__item-star.active img:nth-child(1) {
+  display: block;
+}
+.photo__item-star.active img:nth-child(2) {
+  display: none;
+}
+
+.photo__item-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.catalog__line-level-one-body {
+  display: none;
+  transition: 0.5s;
+  min-height: 320px;
+  transform: translate(-100px);
+  position: relative;
+}
+
+.catalog__line-level-one-body.active {
+  display: block;
+  transform: translate(0);
+}
+
+.catalog__line-level-two-body {
+  display: none;
+  transition: 0.4s;
+  transform: translate(-100px);
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.catalog__line-level-two-body.active {
+  display: flex;
+  position: relative;
+  min-height: 320px;
+  transform: translate(0);
+}
